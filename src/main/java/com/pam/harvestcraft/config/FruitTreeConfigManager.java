@@ -19,7 +19,15 @@ public class FruitTreeConfigManager {
     private static final String CATEGORY_FRUIT_TREES_COMMON = "_common_fruit_trees";
 
     private static String[] defaultWarm = new String[]{
-            "minecraft:savanna",
+            
+    };
+
+    private static String[] defaultTemperate = new String[]{
+            
+    };
+
+    private static String[] defaultCold = new String[]{
+        "minecraft:savanna",
             "minecraft:jungle",
             "minecraft:jungle_hills",
             "minecraft:jungle_edge",
@@ -34,10 +42,21 @@ public class FruitTreeConfigManager {
             "biomesoplenty:tropical_rainforest",
             "biomesoplenty:oasis",
             "biomesoplenty:tropical_island",
-    };
-
-    private static String[] defaultTemperate = new String[]{
-            // TEMPERATURE CATEGORY MEDIUM: 0.6 ... 0.85
+            // TEMPERATURE CATEGORY COLD
+            "minecraft:taiga_cold",
+            "minecraft:taiga_cold_hills",
+            "minecraft:mutated_taiga_cold",
+            "biomesoplenty:snowy_coniferous_forest",
+            "biomesoplenty:snowy_forest",
+            "biomesoplenty:alps_foothills",
+            // TEMPERATURE CATEGORY MEDIUM: 0.2 ... 0.45
+            "minecraft:taiga",
+            "minecraft:taiga_hills",
+            "biomesoplenty:boreal_forest",
+            "biomesoplenty:coniferous_forest",
+            "biomesoplenty:maple_woods",
+            "biomesoplenty:seasonal_forest",
+        // TEMPERATURE CATEGORY MEDIUM: 0.6 ... 0.85
             "minecraft:forest",
             "minecraft:river",
             "minecraft:forest_hills",
@@ -61,23 +80,6 @@ public class FruitTreeConfigManager {
             "biomesoplenty:wetland",
             "biomesoplenty:woodland",
             "biomesoplenty:mountain_foothills"
-    };
-
-    private static String[] defaultCold = new String[]{
-            // TEMPERATURE CATEGORY COLD
-            "minecraft:taiga_cold",
-            "minecraft:taiga_cold_hills",
-            "minecraft:mutated_taiga_cold",
-            "biomesoplenty:snowy_coniferous_forest",
-            "biomesoplenty:snowy_forest",
-            "biomesoplenty:alps_foothills",
-            // TEMPERATURE CATEGORY MEDIUM: 0.2 ... 0.45
-            "minecraft:taiga",
-            "minecraft:taiga_hills",
-            "biomesoplenty:boreal_forest",
-            "biomesoplenty:coniferous_forest",
-            "biomesoplenty:maple_woods",
-            "biomesoplenty:seasonal_forest",
     };
 
     public List<Biome> availableBiomes;
